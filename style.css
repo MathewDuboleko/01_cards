@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: cadetblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.card {
+  position: relative;
+  height: 80vh;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  color: azure;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 500ms ease-in-out;
+}
+
+.card h3 {
+  margin: 0;
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+.active__card {
+  flex: 10;
+}
+
+.active__card h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in delay 0.4s;
+}
